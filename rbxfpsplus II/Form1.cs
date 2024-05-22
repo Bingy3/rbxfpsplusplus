@@ -123,5 +123,21 @@ namespace rbxfpsplus_II
                 createClientSettings(robloxPath);
             }
         }
+
+        private void CustomPath_Click(object sender, EventArgs e)
+        {
+            
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            fileDialog.InitialDirectory = Directory.GetParent(fileDialog.InitialDirectory).FullName;
+            fileDialog.Filter = "All files (*.*)|*.*";
+            fileDialog.FilterIndex = 2;
+            fileDialog.RestoreDirectory = true;
+
+            if (fileDialog.ShowDialog() == DialogResult.OK) { 
+                customPath = Directory.GetParent(fileDialog.FileName).FullName;
+                this.CurrentPath.Text = customPath;
+            }
+        }
     }
 }

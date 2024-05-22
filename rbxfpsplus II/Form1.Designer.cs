@@ -151,6 +151,7 @@
             this.CustomPath.Text = "Custom path";
             this.CustomPath.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.CustomPath.UseVisualStyleBackColor = false;
+            this.CustomPath.Click += new System.EventHandler(this.CustomPath_Click);
             // 
             // label1
             // 
