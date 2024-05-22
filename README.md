@@ -4,7 +4,7 @@ To build make sure you have visual studio installed.
 
 ## Building
   1. Open the visual studio solution file (.sln)
-  2. At the top of the screen, there should be a "build" tab. Click it tab and then "build rbxfps II".
+  2. At the top of the screen, there should be a "build" tab. Click it tab and then "build rbxfpsplus II".
   3. Then close out of visual studio and go the "bin" folder in the "rbxfpsplus II" folder.
   4. Finally, open the "Release" and run "rbxfpsplus II.exe".
 
