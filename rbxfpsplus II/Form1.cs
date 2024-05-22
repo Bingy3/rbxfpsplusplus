@@ -83,13 +83,6 @@ namespace rbxfpsplus_II
          
          */
 
-        private String[] json = {
-            "{",
-            "\"DFIntTaskSchedulerTargetFps\": 10000,",
-            "\"FFlagReportFpsAndGfxQualityPercentiles\": false",
-            "}"
-        };
-
         private void createClientSettings(String rbxPath) {
             if (!Directory.Exists(rbxPath + "/ClientSettings")) {
                 DirectoryInfo info = Directory.CreateDirectory(rbxPath + "/ClientSettings");
