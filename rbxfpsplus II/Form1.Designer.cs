@@ -38,6 +38,8 @@
             this.GenFpsUnlocker = new System.Windows.Forms.Button();
             this.CustomPath = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.FpsValue = new System.Windows.Forms.TextBox();
+            this.DeleteFpsUnlocker = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Title
@@ -164,12 +166,46 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Made by Bingy3 (@AG_FROP on roblox)";
             // 
+            // FpsValue
+            // 
+            this.FpsValue.AccessibleDescription = "";
+            this.FpsValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.FpsValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FpsValue.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FpsValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.FpsValue.Location = new System.Drawing.Point(17, 154);
+            this.FpsValue.Name = "FpsValue";
+            this.FpsValue.Size = new System.Drawing.Size(141, 36);
+            this.FpsValue.TabIndex = 9;
+            this.FpsValue.Text = "Fps...";
+            this.FpsValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.FpsValue.TextChanged += new System.EventHandler(this.FpsValue_TextChanged);
+            // 
+            // DeleteFpsUnlocker
+            // 
+            this.DeleteFpsUnlocker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DeleteFpsUnlocker.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DeleteFpsUnlocker.FlatAppearance.BorderSize = 0;
+            this.DeleteFpsUnlocker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteFpsUnlocker.Font = new System.Drawing.Font("Segoe UI Semibold", 8.6F, System.Drawing.FontStyle.Bold);
+            this.DeleteFpsUnlocker.ForeColor = System.Drawing.Color.White;
+            this.DeleteFpsUnlocker.Location = new System.Drawing.Point(17, 196);
+            this.DeleteFpsUnlocker.Name = "DeleteFpsUnlocker";
+            this.DeleteFpsUnlocker.Size = new System.Drawing.Size(182, 29);
+            this.DeleteFpsUnlocker.TabIndex = 10;
+            this.DeleteFpsUnlocker.Text = "Delete fps unlocker";
+            this.DeleteFpsUnlocker.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.DeleteFpsUnlocker.UseVisualStyleBackColor = false;
+            this.DeleteFpsUnlocker.Click += new System.EventHandler(this.DeleteFpsUnlocker_Click);
+            // 
             // RBXFPSPlus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(800, 350);
+            this.Controls.Add(this.DeleteFpsUnlocker);
+            this.Controls.Add(this.FpsValue);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CustomPath);
             this.Controls.Add(this.GenFpsUnlocker);
@@ -200,6 +236,8 @@
         private System.Windows.Forms.Button GenFpsUnlocker;
         private System.Windows.Forms.Button CustomPath;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox FpsValue;
+        private System.Windows.Forms.Button DeleteFpsUnlocker;
     }
 }
 
