@@ -1,5 +1,7 @@
 # rbxfpsplus II
 
+![image](https://github.com/Bingy3/rbxfpsplusplus/assets/138832773/fa441159-fa0a-4ec2-9724-5557ca408b75)
+
 To build make sure you have visual studio installed.
 
 ## Building
